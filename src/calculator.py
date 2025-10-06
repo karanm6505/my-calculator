@@ -16,6 +16,14 @@ def multiply(a,b):
 
 def divide(a,b):
     return a/b
+
+def power(a,b):
+    return pow(a,b)
+
+def sqrt(a):
+    if a < 0:
+        raise ValueError("Value cant be negative")
+    return pow(a,0.5) 
 # def multiply(a, b):
 #     """Multiply two numbers with input validation and logging."""
 #     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
